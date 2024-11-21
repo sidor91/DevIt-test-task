@@ -25,7 +25,7 @@ app.post("/api", (req, res) => {
   }
 
   const { index } = req.body;
-  if (!index || typeof index !== number) res.status(400).json("")
+  if (!index || typeof index !== 'number') res.status(400).json("")
   const delay = Math.floor(Math.random() * 1000) + 1;
 
   setTimeout(() => {
